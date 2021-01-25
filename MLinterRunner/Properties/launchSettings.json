@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "MLinterRunner": {
+      "commandName": "Project"
+    }
+  }
+}
