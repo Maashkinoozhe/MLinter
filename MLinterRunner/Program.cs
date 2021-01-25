@@ -16,6 +16,11 @@ namespace MLinterRunner
             if (args.Any())
             {
                 config = Args.Parse<LinterRunnerArgs>(args);
+                if (config == null)
+                {
+                    // help was called, end program
+                    return;
+                }
             }
 
             string path = Directory.GetCurrentDirectory();
