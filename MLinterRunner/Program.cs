@@ -23,7 +23,7 @@ namespace MLinterRunner
                 }
             }
 
-            string path = Directory.GetCurrentDirectory();
+            string path = Path.Combine( Directory.GetCurrentDirectory() + "/");
             Linter linter;
             if (config .Directories == null || !config.Directories.Any())
             {
